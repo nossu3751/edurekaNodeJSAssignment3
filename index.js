@@ -141,11 +141,11 @@ const url = "http://5c055de56b84ee00137d25a0.mockapi.io/api/v1/employees";
 
 getEmployee = () => {
     return new Promise((resolve, reject)=>{
-        request.get(url, {json:true}, (err, res, body)=> {
+        request.get(url, (err, res, body)=> {
             if(err){
                 reject(err);
             }else{
-                resolve(body);
+                resolve(JSON.parse(body));
             }
         })
     })

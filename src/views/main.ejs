@@ -3,21 +3,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Created At</th>
-      <th scope="col">Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <%for(let i=0; i < result.length ; i++){%>
-    <tr>
-      <th scope="row"><%=result[i].id%></th>
-      <td><%=result[i].createdAt%></td>
-      <td><%=result[i].name%></td>
-    </tr>
-  <%}%>
-  </tbody>
-</table>
+<div class="container pt-5 pb-5">
+    <div class="row justify-content-center">
+        <h1 class="mb-5"> Rhosung's Employee Database </h1>
+    </div>
+    <div class="card-columns">
+        <%for(let i=0; i < result.length ; i++){%>
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title"><%=result[i].name%></h5>
+                <p class="card-text">Emp ID: <%=result[i].id%> </p>
+                <p class="card-text"><small class="text-muted">created at: <%=result[i].createdAt%></small></p>
+                </div>
+            </div>
+        <%}%>   
+    </div>
+</div>
+
