@@ -1,0 +1,57 @@
+[
+        {
+            "id": 1,
+            "name": "Rhosung",
+            "title": "Trainee",
+            "address": {
+                "city": "Upland",
+                "country": "USA",
+                "zipcode": 91784
+            },
+            "projectId": "101"
+        },
+        {
+            "id": 2,
+            "name": "Dummy Data",
+            "title": "Software eng",
+            "address": {
+                "city": "Dummy City",
+                "country": "USA",
+                "zipcode": 12345
+            },
+            "projectId": "101"
+        },
+        {
+            "id": 3,
+            "name": "Tim Cook",
+            "title": "Ceo",
+            "address": {
+                "city": "San Francisco",
+                "country": "USA",
+                "zipcode": 23456
+            },
+            "projectId": "102"
+        },
+        {
+            "id": 4,
+            "name": "Elon Musk",
+            "title": "Technoking",
+            "address": {
+                "city": "Texas",
+                "country": "USA",
+                "zipcode": 34567
+            },
+            "projectId": "102"
+        },
+        {
+            "id": 5,
+            "name": "Random Name",
+            "title": "Software Developer",
+            "address": {
+                "city": "Montreal",
+                "country": "Canada",
+                "zipcode": 11111
+            },
+            "projectId": "101"
+        }
+]
